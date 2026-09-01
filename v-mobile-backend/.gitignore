@@ -1,0 +1,4 @@
+.env
+firebase-service-account.json
+*.firebase-service-account.json
+app/*firebase-adminsdk*.json

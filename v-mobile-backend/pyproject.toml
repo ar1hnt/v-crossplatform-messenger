@@ -1,0 +1,30 @@
+[project]
+name = "v-mobile-backend"
+version = "0.1.0"
+description = "MVP backend for messenger course project"
+requires-python = ">=3.12"
+dependencies = [
+  "alembic>=1.14.0",
+  "asyncpg>=0.30.0",
+  "bcrypt>=4.0.1,<4.1",
+  "email-validator>=2.2.0",
+  "fastapi>=0.115.0",
+  "google-auth[requests]>=2.36.0",
+  "greenlet>=3.1.1",
+  "httpx>=0.28.0",
+  "minio>=7.2.15",
+  "passlib[bcrypt]>=1.7.4",
+  "pydantic-settings>=2.6.1",
+  "pyjwt>=2.10.1",
+  "python-multipart>=0.0.20",
+  "sqlalchemy>=2.0.36",
+  "uvicorn[standard]>=0.32.1",
+  "psycopg[binary]>=3.2.3",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
